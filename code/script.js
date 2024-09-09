@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const navbarToggler = document.querySelector('.navbar-toggler');
+    const burgerButton = document.querySelector('.navbar-toggler');
     const mobileNav = document.querySelector('.mobile-nav');
+    const closeButton = document.querySelector('.close-menu');
 
-    if (navbarToggler && mobileNav) {
-        navbarToggler.addEventListener('click', function() {
-            alert('Burger menu clicked!');
-            mobileNav.classList.toggle('active');
-        });
-    } else {
-        console.error('Navbar toggler or mobile navigation not found.');
-    }
+    burgerButton.addEventListener('click', function() {
+        mobileNav.classList.toggle('active');
+    });
+
+    closeButton.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+    });
 });
