@@ -18,14 +18,15 @@
             </a>
 
             <div class="header_feature">
-                <a href="#" class="header_reserveren_button" rel="nofollow">Reserveren</a>
+                <a href="#" class="header_reserveren_button" rel="nofollow">Reserveer</a>
                 <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                    &#9776; <!-- Burger menu icon -->
+                    &#9776;
                 </button>
             </div>
         </div>
         <nav class="mobile-nav">
             <button class="close-menu" aria-label="Close menu">&times;</button>
+            <a href="#" class="menu_reserveren_button" rel="nofollow">Reserveer</a>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
