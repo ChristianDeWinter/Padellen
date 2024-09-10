@@ -15,12 +15,12 @@
         <div class="header_container">
             <a class="header_brand" href="#">
                 <img class="brand__img" src="https://padelpoints.nl/wp-content/uploads/2021/07/logo.svg"
-                    alt="Padelpoints">
+                    alt="Padelpoints Logo">
             </a>
 
             <div class="header_feature">
                 <a href="#" class="header_reserveren_button" rel="nofollow">Reserveer</a>
-                <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" aria-label="Toggle navigation" aria-expanded="false">
                     &#9776;
                 </button>
             </div>
@@ -39,17 +39,12 @@
     </header>
 
     <main id="content" class="website-content">
-        <div class="first-content">
-            <div class="hero-ba-img">
-                <img src="https://padelpoints.nl/wp-content/uploads/2021/07/Image-3@2x.jpg" alt="Padel Image">
-            </div>
+        <div class="hero-ba-img">
             <div class="hero__content">
                 <div class="hero__title">
-                    <h1><strong>Sport, spel, fun<br>
-                            en fitness inéén</strong></h1>
+                    <h1><strong>Sport, spel, fun<br> en fitness inéén</strong></h1>
                 </div>
-                <a href="#padel-banen-section-block_60e70fbf84759" class="hero__link btn btn--big">
-                    reserveer </a>
+                <a href="#padel-banen-section-block_60e70fbf84759" class="hero__link btn btn--big">Reserveer</a>
             </div>
         </div>
     </main>
