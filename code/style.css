@@ -19,7 +19,7 @@ header {
 }
 
 header.scrolled {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .header_container {
@@ -96,18 +96,18 @@ header.scrolled {
 }
 
 .hero-ba-img {
-    position: relative; /* Container relative to position the text on top of the image */
-    height: 100vh; /* Ensure it takes up the full viewport height */
+    position: relative;
+    height: 100vh;
     background-image: url('https://padelpoints.nl/wp-content/uploads/2021/07/Image-3@2x.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .hero__content {
-    position: absolute; /* Absolute positioning to place content on top of the image */
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the text */
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
 }
@@ -135,7 +135,25 @@ header.scrolled {
 
 .hero__link:hover {
     background-color: #c022ef;
-    transform: scale(1.05); /* Small hover effect */
+    transform: scale(1.05);
+}
+
+.wp-block-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.wp-block-group__inner-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.extra-small-align-left {
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .mobile-nav {
@@ -195,6 +213,13 @@ header.scrolled {
     color: #c022ef;
 }
 
+hr {
+    margin: 0;
+    border: none;
+    height: 7px;
+    background: linear-gradient(90deg, #005aa8, #c022ef);
+}
+
 @media (max-width: 768px) {
     .header_reserveren_button {
         display: none;
@@ -210,18 +235,10 @@ header.scrolled {
     }
 
     .hero-ba-img {
-        height: 300px; /* Adjust for smaller screens */
+        height: 300px;
     }
 
     .hero__content {
-        top: 40%; /* Adjust position for smaller screens */
+        top: 40%;
     }
-}
-
-/* Styles for <hr> */
-hr {
-    margin: 0;
-    border: none;
-    height: 7px;
-    background: linear-gradient(90deg, #005aa8, #c022ef);
 }

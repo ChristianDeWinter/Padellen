@@ -48,6 +48,17 @@
             </div>
         </div>
         <hr>
+        <div class="wp-block-group has-white-color has-text-color has-background centered-content" style="background-color:#292929">
+            <div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+                <div style="height:34px" aria-hidden="true" class="wp-block-spacer"></div>
+
+                <p class="has-text-align-center extra-small-align-left centered-text"><strong>Padel heeft het allemaal! Zin in een
+                        potje padel? Boeken gaat simpel en snel via de website of Playtomic app. <br>Reserveer met 1
+                        druk op de knop een padelbaan wanneer het jou uitkomt.</strong></p>
+
+                <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+            </div>
+        </div>
     </main>
 
     <script src="script.js"></script>
