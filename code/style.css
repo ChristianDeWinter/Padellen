@@ -63,14 +63,21 @@ header.scrolled {
     border-radius: 5px;
     margin-right: 20px;
     text-transform: uppercase;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    transition: background-color 0.3s, color 0.3s, outline 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+    outline: 2px solid transparent; 
+    outline-offset: 2px;
 }
 
 .header_reserveren_button:hover {
     background-color: transparent;
-    color: #1E73BE;
-    transform: scale(1.05);
+    color: #fff;
+    outline: 2px solid #1E73BE;
+    outline-offset: 2px; 
 }
+
+
+
+
 
 .menu_reserveren_button {
     background-color: white;
