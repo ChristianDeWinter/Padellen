@@ -44,9 +44,10 @@
                 <div class="hero__title">
                     <h1><strong>Sport, spel, fun<br> en fitness inéén</strong></h1>
                 </div>
-                <a href="#padel-banen-section-block_60e70fbf84759" class="hero__link btn btn--big">Reserveer</a>
+                <a href="#" class="header_reserveren_button" rel="nofollow">Reserveer</a>
             </div>
         </div>
+        <hr>
     </main>
 
     <script src="script.js"></script>
