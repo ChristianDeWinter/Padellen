@@ -118,10 +118,10 @@ header.scrolled {
 .hero__title h1 {
     font-size: 90px;
     text-transform: uppercase;
-    font-weight: bold; /* Bold text */
-    margin: 0 0 30px 0; /* Add bottom margin to create space */
+    font-weight: bold;
+    margin: 0 0 30px 0;
     color: #fff;
-    line-height: 1.03333; /* Line height */
+    line-height: 1.03333;
 }
 
 .hero__link {
@@ -135,7 +135,7 @@ header.scrolled {
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.2s;
     margin-top: 20px;
-    margin-bottom: 20px; /* Add margin below button */
+    margin-bottom: 20px; 
 }
 
 .hero__link:hover {
@@ -225,6 +225,64 @@ hr {
     background: linear-gradient(90deg, #005aa8, #c022ef);
 }
 
+.padel-banen-section {
+    padding: 50px 0;
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+.padel-banen-section__title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px; 
+}
+
+.location {
+    background-color: #292929;
+    border-radius: 8px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    color: #fff; 
+}
+
+.location__img img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.location__title {
+    font-size: 1.8rem; 
+    margin: 10px 0; 
+}
+
+.location__text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.location__btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location__details-btn,
+.location__external-btn {
+    background-color: #f5a623;
+    color: #fff; 
+    border: none;
+    border-radius: 4px; 
+    padding: 10px 20px; 
+    text-decoration: none;
+    font-size: 1rem; 
+    transition: background-color 0.3s;
+}
+
+.location__details-btn:hover,
+.location__external-btn:hover {
+    background-color: #d98e22; 
+}
+
 @media (max-width: 768px) {
     .header_reserveren_button {
         display: none;
@@ -237,10 +295,22 @@ hr {
 
     .hero__title h1 {
         font-size: 45px;
-        margin: 0 0 20px 0; /* Adjust margin for smaller screens */
+        margin: 0 0 20px 0; 
     }
 
     .hero__content {
         top: 40%;
+    }
+
+    .padel-banen-section__title {
+        font-size: 2rem;
+    }
+
+    .location__title {
+        font-size: 1.5rem;
+    }
+
+    .location {
+        padding: 15px;
     }
 }
