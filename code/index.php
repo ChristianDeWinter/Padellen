@@ -57,6 +57,7 @@
             </div>
         </div>
 
+        <!-- Existing Padel Baan Section -->
         <section id="padel-banen-section-block_0f07311ffbc2ae383f1565932aed84df" class="padel-banen-section bg-figures-section" style="background-color: #1a1a1a">
             <div class="on-bg">
                 <div class="container container--header">
@@ -96,16 +97,16 @@
                                 <hr>
                                 <div class="location__content">
                                     <h3 class="location__title">
-                                        <span>Padelpoints </span>Hoofddorp
+                                        <span>Padelpoints </span>Koog aan de Zaan
                                     </h3>
                                     <p class="location__text">
-                                        Padelpoints Hoofddorp is met 12 padelbanen een bruisende sportlocatie aan de rand van Amsterdam.
+                                        2 indoor padelbanen met fijne horeca. Padelpoints Koog aan de Zaan is goed bereikbaar met de auto en ligt op enkele minuten lopen van het station.
                                     </p>
                                     <div class="location__btns">
-                                        <a href="https://padelpoints.nl/padel_banen/hoofddorp/" class="location__details-btn btn btn--transparent">
+                                        <a href="https://padelpoints.nl/padel_banen/koog-aan-de-zaan/" class="location__details-btn btn btn--transparent">
                                             details
                                         </a>
-                                        <a href="https://playtomic.io/padelpoints-hoofddorp/8519afe9-dd55-4384-af68-9d6c4f8cfe03?q=PADEL~2022-09-26~~~" class="location__external-btn btn">
+                                        <a href="https://playtomic.io/padelpoints-koog-aan-de-zaan/9b9b821d-7d64-47e3-b98d-1af4d9c2be7d" class="location__external-btn btn" target="_blank" rel="nofollow">
                                             reserveer
                                         </a>
                                     </div>
@@ -116,9 +117,52 @@
                 </div>
             </div>
         </section>
+
+        <section id="trainers-section-block_f58c17f9da96f277f642df8574c38c11" class="trainers-section" style="background-color: #005AA8">
+            <div class="container container--header">
+                <h2 class="trainers-section__title">Onze Trainers</h2>
+            </div>
+      
+            <div class="trainers-section__row slick-initialized slick-slider slick-dotted" data-slick="trainers">
+                <div class="slick-list draggable" style="padding: 0px calc(-524px + 50vw);">
+                    <div class="slick-track" style="opacity: 1; width: 4124px; transform: translate3d(0px, 0px, 0px);">
+                        <div class="slick-slide slick-current slick-center" data-slick-index="0" aria-hidden="true" style="width: 1031px;" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
+                            <div>
+                                <article class="trainer" style="width: 100%; display: inline-block;">
+                                    <div class="trainer__wrap">
+                                        <div class="trainer__thumb">
+                                            <img decoding="async" src="https://padelpoints.nl/wp-content/uploads/2023/08/C276C56D-FBD6-4178-AAD7-9D5D5589C84F.jpeg" class="attachment-skywalker-500x500 size-skywalker-500x500 wp-post-image" alt="" srcset="https://padelpoints.nl/wp-content/uploads/2023/08/C276C56D-FBD6-4178-AAD7-9D5D5589C84F.jpeg 500w, https://padelpoints.nl/wp-content/uploads/2023/08/C276C56D-FBD6-4178-AAD7-9D5D5589C84F-300x225.jpeg 300w, https://padelpoints.nl/wp-content/uploads/2023/08/C276C56D-FBD6-4178-AAD7-9D5D5589C84F-400x300.jpeg 400w" sizes="(max-width: 500px) 100vw, 500px">
+                                        </div>
+                                     
+                                        <div class="trainer__content">
+                                            <div class="trainer__header">
+                                                <h3 class="trainer__name">Marcelino Dijkman</h3>
+                                             
+                                                <p class="trainer__subs">‘Iedere les moet een belevenis zijn’</p>
+                                            </div>
+                                          
+                                            <p class="trainer__text">
+                                                Marcelino Dijkman, dat is wie ik ben, en het is mijn passie om mijn leerlingen de kunst van het padellen bij te brengen. Met essentiële en waardevolle instructies zul je versteld staan van de snelheid waarmee je vooruitgang boekt na slechts enkele lessen. Ik ben beschikbaar voor zowel privélessen (1-2 personen) als groepslessen (4-8 personen). Leuk en leerzaam!
+                                            </p>
+                                            <div class="trainer__btns">
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <script src="script.js"></script>
+    <footer class="footer">
+        <p>&copy; 2023 Padel Points. Alle rechten voorbehouden.</p>
+    </footer>
 </body>
 
 </html>
