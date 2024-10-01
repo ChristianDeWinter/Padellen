@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<header class="header">
+    <header class="header">
         <div class="header_container">
             <a class="header_brand" href="#">
                 <img class="brand__img" src="https://padelpoints.nl/wp-content/uploads/2021/07/logo.svg" alt="Padelpoints Logo">
@@ -201,41 +201,14 @@
             </div>
         </section>
 
-        <section id="about-section" class="about-section">
-            <div class="container container--header">
-                <h2 class="about-section__title">Over ons</h2>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <p>&copy; 2024 Padel Points. All Rights Reserved.</p>
+                </div>
             </div>
-            <div class="about-section__content">
-                <p>Wij zijn een padelorganisatie die zich richt op het creëren van een unieke padelervaring voor spelers
-                    van alle niveaus. Ons doel is om padel toegankelijk te maken en om spelers te ondersteunen in hun
-                    ontwikkeling.</p>
-                <p>Met een team van ervaren trainers en een geweldige omgeving bieden we de mogelijkheid om padel te
-                    spelen, lessen te volgen en toernooien te spelen.</p>
-            </div>
-        </section>
-
-        <section id="contact-section" class="contact-section" style="background-color: #1a1a1a">
-            <div class="container container--header">
-                <h2 class="contact-section__title">Contact</h2>
-            </div>
-            <div class="contact-section__content">
-                <p>Voor meer informatie over ons en onze diensten kunt u contact met ons opnemen via onderstaand
-                    formulier.</p>
-                <form action="" method="post" class="contact-form">
-                    <input type="text" name="name" placeholder="Naam" required>
-                    <input type="email" name="email" placeholder="E-mail" required>
-                    <textarea name="message" placeholder="Bericht" required></textarea>
-                    <button type="submit" class="btn">Verstuur</button>
-                </form>
-            </div>
-        </section>
+        </footer>
     </main>
-
-    <footer class="footer">
-        <div class="footer__content">
-            <p>&copy; 2024 Padel Points. Alle rechten voorbehouden.</p>
-        </div>
-    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -245,7 +218,7 @@
                 dots: true,
                 infinite: true,
                 speed: 500,
-                slidesToShow: 3,
+                slidesToShow: 1, 
                 slidesToScroll: 1,
             });
         });
