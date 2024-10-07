@@ -157,11 +157,6 @@
     <footer class="footer">
         <div class="footer_container">
             <p>&copy; 2024 Padel Points. All Rights Reserved.</p>
-            <ul class="footer_links">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
         </div>
     </footer>
 
