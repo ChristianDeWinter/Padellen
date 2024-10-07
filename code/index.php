@@ -1,3 +1,8 @@
+<?php
+include 'database.php';
+include "trainer_data.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,10 +87,8 @@
                                     <h3 class="location__title">
                                         <span>Padelpoints </span>Badhoevedorp
                                     </h3>
-                                    <p class="location__text">
-                                        Padelpoints Badhoevedorp is de grootste indoor padellocatie van Nederland: 14
-                                        padelbanen.
-                                    </p>
+                                    <p class="location__text">Padelpoints Badhoevedorp is de grootste indoor
+                                        padellocatie van Nederland: 14 padelbanen.</p>
                                     <div class="location__btns">
                                         <a href="#" class="location__details-btn btn btn--transparent">details</a>
                                         <a href="#" class="location__external-btn btn" target="_blank"
@@ -107,10 +110,8 @@
                                     <h3 class="location__title">
                                         <span>Padelpoints</span>Amstelveen
                                     </h3>
-                                    <p class="location__text">
-                                        Padelpoints Amstelveen biedt de unieke beleving van spelen op drie indoor
-                                        padelbanen van topkwaliteit.
-                                    </p>
+                                    <p class="location__text">Padelpoints Amstelveen biedt de unieke beleving van spelen
+                                        op drie indoor padelbanen van topkwaliteit.</p>
                                     <div class="location__btns">
                                         <a href="#" class="location__details-btn btn btn--transparent">details</a>
                                         <a href="#" class="location__external-btn btn" target="_blank"
@@ -124,36 +125,42 @@
             </div>
         </section>
 
-
         <section id="trainers-section" class="trainers-section" style="background-color: #f5f5f5; padding: 40px 0;">
             <div class="container">
                 <h2 class="trainers-section__title">Ontmoet Onze Trainers</h2>
-                <div class="row">
+                <div class="trainer-slider">
+                    <?php
+                    if ($result) {
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo '<div class="trainer">';
+                                echo '<img class="trainer__img" src="' . htmlspecialchars($row['image_url']) . '" alt="' . htmlspecialchars($row['name']) . '">';
+                                echo '<div class="trainer__name">' . htmlspecialchars($row['name']) . '</div>';
+                                echo '<div class="trainer__bio">' . htmlspecialchars($row['bio']) . '</div>';
+                                echo '<div class="trainer__btns">';
+                                echo '<a href="#" class="trainer__btn all-trainers">All Trainers</a>';
+                                echo '<a href="#" class="trainer__btn book-training">Boek een training</a>';
+                                echo '</div>';
+                                echo '</div>';
+                            }
+                        } else {
+                            echo '<div class="trainer">Geen trainers gevonden.</div>';
+                        }
+                    } else {
+                        echo '<div class="trainer">Fout bij het ophalen van trainers: ' . htmlspecialchars($conn->error) . '</div>';
+                    }
 
-                    <div class="col-12 col-sm-6">
-                        <article class="trainer">
-                            <img src="https://example.com/trainer1.jpg" alt="Trainer 1" class="trainer__img">
-                            <h3 class="trainer__name">John Doe</h3>
-                            <p class="trainer__bio">
-                                John is een ervaren padeltrainer met meer dan 10 jaar ervaring en een passie voor de
-                                sport. Hij helpt spelers van elk niveau om beter te worden.
-                            </p>
-                        </article>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <article class="trainer">
-                            <img src="https://example.com/trainer2.jpg" alt="Trainer 2" class="trainer__img">
-                            <h3 class="trainer__name">Jane Smith</h3>
-                            <p class="trainer__bio">
-                                Jane heeft talloze toernooien gespeeld en brengt haar professionele ervaring naar
-                                Padelpoints om beginners en gevorderden te coachen.
-                            </p>
-                        </article>
-                    </div>
+                    $conn->close();
+                    ?>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-button prev">❮</button>
+                    <button class="slider-button next">❯</button>
                 </div>
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="footer_container">
             <p>&copy; 2024 Padel Points. All Rights Reserved.</p>
