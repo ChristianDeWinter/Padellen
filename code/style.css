@@ -1,357 +1,248 @@
 body {
-    min-height: calc(100vh - 393px);
-    background-color: #292929;
-    font: 500 15px / 1.75 'Poppins', sans-serif;
-    color: #fff;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    background-color: #fff;
+    color: #000;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-    background: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    transition: background 0.3s ease-in-out;
-}
-
-header.scrolled {
-    background: rgba(0, 0, 0, 0.2);
+.header {
+    background-color: #292929;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 30px;
     width: 100%;
 }
 
 .header_brand img {
-    width: 170px;
-}
-
-.header_feature {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-toggler {
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-    margin-right: 50px;
-    transition: color 0.3s ease-in-out;
-}
-
-.navbar-toggler:hover {
-    color: #c022ef;
+    max-height: 50px;
 }
 
 .header_reserveren_button {
-    background-color: #1E73BE;
+    background-color: #ff5c5c;
     color: #fff;
-    padding: 12px 17px;
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
-    margin-right: 20px;
     text-transform: uppercase;
-    transition: background-color 0.3s, color 0.3s, outline 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
+    text-decoration: none;
 }
 
 .header_reserveren_button:hover {
+    background-color: #e64e4e;
+}
+
+.navbar-toggler {
+    font-size: 30px;
     background-color: transparent;
-    color: #fff;
-    outline: 2px solid #1E73BE;
-    outline-offset: 2px;
-}
-
-.menu_reserveren_button {
-    background-color: white;
-    color: #1E73BE;
-    padding: 12px 17px;
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    display: block;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-transform: uppercase;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
-}
-
-.menu_reserveren_button:hover {
-    background-color: #1E73BE;
+    border: none;
     color: white;
-    transform: scale(1.05);
-}
-
-.hero-ba-img {
-    position: relative;
-    height: 100vh;
-    background-image: url('https://padelpoints.nl/wp-content/uploads/2021/07/Image-3@2x.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.hero__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-}
-
-.hero__title h1 {
-    font-size: 90px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 0 0 30px 0;
-    color: #fff;
-    line-height: 1.03333;
-}
-
-.hero__link {
-    display: inline-block;
-    background-color: #1E73BE;
-    color: #fff;
-    padding: 12px 17px;
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.hero__link:hover {
-    background-color: #c022ef;
-    transform: scale(1.05);
-}
-
-.wp-block-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.wp-block-group__inner-container {
-    max-width: 1200px;
-    width: 100%;
-}
-
-.extra-small-align-left {
-    font-size: 18px;
-    line-height: 1.5;
 }
 
 .mobile-nav {
     display: none;
     position: fixed;
     top: 0;
-    right: 0;
-    background-color: #005aa8;
-    width: 250px;
-    height: 100vh;
-    text-align: center;
-    z-index: 2;
-    padding: 20px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 40px;
 }
 
-.mobile-nav.active {
+.mobile-nav.open {
     display: block;
-    opacity: 1;
+}
+
+.mobile-nav .menu_reserveren_button {
+    background-color: #ff5c5c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    display: block;
+    text-decoration: none;
 }
 
 .mobile-nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    margin: 0;
-    padding-top: 30px;
 }
 
-.mobile-nav li {
-    padding: 10px 0;
+.mobile-nav ul li {
+    margin: 10px 0;
 }
 
 .mobile-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.mobile-nav a:hover {
-    color: #c022ef;
-}
-
-.close-menu {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: transparent;
-    border: none;
     color: white;
-    font-size: 30px;
-    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
 }
 
-.close-menu:hover {
-    color: #c022ef;
+.hero-ba-img {
+    background-image: url('https://padelpoints.nl/wp-content/uploads/2021/07/background-1.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-hr {
-    margin: 0;
-    border: none;
-    height: 7px;
-    background: linear-gradient(90deg, #005aa8, #c022ef);
+.hero__content {
+    text-align: center;
+}
+
+.hero__title h1 {
+    color: white;
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero__content .header_reserveren_button {
+    margin-top: 20px;
 }
 
 .padel-banen-section {
-    padding: 50px 0;
-    color: #fff;
-    background-color: #1a1a1a;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    padding: 40px 0;
 }
 
 .padel-banen-section__title {
+    color: white;
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+    font-size: 36px;
+    margin-bottom: 40px;
 }
 
 .location {
-    background-color: #292929;
-    border-radius: 8px;
+    background-color: #f5f5f5;
     padding: 20px;
-    margin: 10px;
-    flex: 1 1 calc(45% - 20px); 
-    min-width: 280px;
-    max-width: 50%;
-    color: #fff;
-    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .location__img img {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .location__title {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    color: #fff;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #292929;
 }
 
 .location__text {
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-    color: #fff;
+    font-size: 16px;
+    color: #666;
 }
 
 .location__btns {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 20px;
 }
 
-.location__details-btn,
-.location__external-btn {
-    background-color: #f5a623;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+.location__details-btn, .location__external-btn {
     padding: 10px 20px;
+    background-color: #ff5c5c;
+    color: white;
     text-decoration: none;
-    font-size: 0.9rem;
-    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
-.location__details-btn:hover,
-.location__external-btn:hover {
-    background-color: #d98e22;
+.location__external-btn {
+    background-color: #292929;
 }
 
-.slick-track {
+.location__details-btn:hover, .location__external-btn:hover {
+    opacity: 0.8;
+}
+
+.trainers-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.trainers-section__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.trainer {
+    text-align: center;
+}
+
+.trainer__img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.trainer__name {
+    font-size: 24px;
+    color: #292929;
+    margin-bottom: 10px;
+}
+
+.trainer__bio {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer_container {
     display: flex;
-    overflow: hidden; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.slick-slide {
-    width: 100% !important; 
+.footer_links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer_links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer_links li a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-    .header_reserveren_button {
-        display: none;
-    }
-
-    .navbar-toggler {
-        display: block;
-        margin-right: 0;
-    }
-
-    .hero__title h1 {
-        font-size: 45px;
-        margin: 0 0 20px 0;
-    }
-
-    .hero__content {
-        top: 40%;
-    }
-
-    .padel-banen-section__title {
-        font-size: 2rem;
-    }
-
     .location__title {
-        font-size: 1.5rem;
-        color: #fff;
+        font-size: 20px;
     }
 
-    .location {
-        padding: 15px;
-        flex: 1 1 100%;
+    .trainer__img {
+        width: 150px;
+        height: 150px;
     }
-}
 
-.hero__bg--img img {
-    height: 100%;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
-img, svg {
-    vertical-align: middle;
-}
-
-img {
-    border-style: none;
+    .trainers-section__title {
+        font-size: 28px;
+    }
 }

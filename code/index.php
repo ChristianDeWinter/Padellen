@@ -39,6 +39,7 @@
     </header>
 
     <main id="content" class="website-content">
+
         <div class="hero-ba-img">
             <div class="hero__content">
                 <div class="hero__title">
@@ -48,34 +49,33 @@
             </div>
         </div>
         <hr>
+
         <div class="wp-block-group has-white-color has-text-color has-background centered-content"
             style="background-color:#292929">
             <div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
                 <div style="height:34px" aria-hidden="true" class="wp-block-spacer"></div>
                 <p class="has-text-align-center extra-small-align-left centered-text"><strong>Padel heeft het allemaal!
-                        Zin in een
-                        potje padel? Boeken gaat simpel en snel via de website of Playtomic app. <br>Reserveer met 1
-                        druk op de knop een padelbaan wanneer het jou uitkomt.</strong></p>
+                        Zin in een potje padel? Boeken gaat simpel en snel via de website of Playtomic app.
+                        <br>Reserveer met 1 druk op de knop een padelbaan wanneer het jou uitkomt.</strong></p>
                 <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
             </div>
         </div>
 
-        <section id="padel-banen-section-block_0f07311ffbc2ae383f1565932aed84df"
-            class="padel-banen-section bg-figures-section" style="background-color: #1a1a1a">
+        <section id="padel-banen-section" class="padel-banen-section bg-figures-section"
+            style="background-color: #1a1a1a">
             <div class="on-bg">
                 <div class="container container--header">
                     <h2 class="padel-banen-section__title">Onze padelbanen</h2>
                 </div>
                 <div class="container">
                     <div class="row location__row">
+
                         <div class="col-12 col-sm-6">
                             <article class="location">
                                 <div class="location__img">
                                     <img decoding="async"
                                         src="https://padelpoints.nl/wp-content/uploads/2021/07/PadelPoints-6-800x600.jpg"
-                                        class="attachment-skywalker-950x600 size-skywalker-950x600 wp-post-image" alt=""
-                                        srcset="https://padelpoints.nl/wp-content/uploads/2021/07/PadelPoints-6-800x600.jpg 800w, https://padelpoints.nl/wp-content/uploads/2021/07/PadelPoints-6-900x675.jpg 900w, https://padelpoints.nl/wp-content/uploads/2021/07/PadelPoints-6-1200x900.jpg 1200w, https://padelpoints.nl/wp-content/uploads/2021/07/PadelPoints-6-300x225.jpg 300w, https://padelpoints.nl/wp-content/uploads/2021/07/PadelPoints-6-1024x768.jpg 1024w, https://padelpoints.nl/wp-content/uploads/2021/07/PadelPoints-6-768x576.jpg 768w, https://padelpoints.nl/wp-content/uploads/2021/07/PadelPoints-6-1536x1151.jpg 1536w, https://padelpoints.nl/wp-content/uploads/2021/07/PadelPoints-6-2048x1535.jpg 2048w, https://padelpoints.nl/wp-content/uploads/2021/07/PadelPoints-6-1534x1150.jpg 1534w, https://padelpoints.nl/wp-content/uploads/2021/07/PadelPoints-6-500x375.jpg 500w, https://padelpoints.nl/wp-content/uploads/2021/07/PadelPoints-6-400x300.jpg 400w"
-                                        sizes="(max-width: 800px) 100vw, 800px">
+                                        alt="Padelpoints Badhoevedorp">
                                 </div>
                                 <hr>
                                 <div class="location__content">
@@ -84,48 +84,37 @@
                                     </h3>
                                     <p class="location__text">
                                         Padelpoints Badhoevedorp is de grootste indoor padellocatie van Nederland: 14
-                                        padelbanen, een levendige horeca en gratis parkeren.
+                                        padelbanen.
                                     </p>
                                     <div class="location__btns">
-                                        <a href="https://padelpoints.nl/padel_banen/badhoevedorp/"
-                                            class="location__details-btn btn btn--transparent">
-                                            details
-                                        </a>
-                                        <a href="https://playtomic.io/padelpoints-badhoevedorp/0c65ed05-fcd1-44f9-baef-0eaa501ad071"
-                                            class="location__external-btn btn" target="_blank" rel="nofollow">
-                                            reserveer
-                                        </a>
+                                        <a href="#" class="location__details-btn btn btn--transparent">details</a>
+                                        <a href="#" class="location__external-btn btn" target="_blank"
+                                            rel="nofollow">reserveer</a>
                                     </div>
                                 </div>
                             </article>
                         </div>
+
                         <div class="col-12 col-sm-6">
                             <article class="location">
                                 <div class="location__img">
                                     <img decoding="async"
                                         src="https://padelpoints.nl/wp-content/uploads/2022/07/E6EF17D6-97E2-42F9-8415-5657F8BE82B7-801x600.jpeg"
-                                        class="attachment-skywalker-950x600 size-skywalker-950x600 wp-post-image" alt=""
-                                        srcset="https://padelpoints.nl/wp-content/uploads/2022/07/E6EF17D6-97E2-42F9-8415-5657F8BE82B7-801x600.jpeg 801w, https://padelpoints.nl/wp-content/uploads/2022/07/E6EF17D6-97E2-42F9-8415-5657F8BE82B7-300x225.jpeg 300w, https://padelpoints.nl/wp-content/uploads/2022/07/E6EF17D6-97E2-42F9-8415-5657F8BE82B7-1024x768.jpeg 1024w, https://padelpoints.nl/wp-content/uploads/2022/07/E6EF17D6-97E2-42F9-8415-5657F8BE82B7-768x576.jpeg 768w, https://padelpoints.nl/wp-content/uploads/2022/07/E6EF17D6-97E2-42F9-8415-5657F8BE82B7-1536x1151.jpeg 1536w, https://padelpoints.nl/wp-content/uploads/2022/07/E6EF17D6-97E2-42F9-8415-5657F8BE82B7-1534x1150.jpeg 1534w, https://padelpoints.nl/wp-content/uploads/2022/07/E6EF17D6-97E2-42F9-8415-5657F8BE82B7-500x375.jpeg 500w, https://padelpoints.nl/wp-content/uploads/2022/07/E6EF17D6-97E2-42F9-8415-5657F8BE82B7-400x300.jpeg 400w, https://padelpoints.nl/wp-content/uploads/2022/07/E6EF17D6-97E2-42F9-8415-5657F8BE82B7.jpeg 2048w"
-                                        sizes="(max-width: 801px) 100vw, 801px">
+                                        alt="Padelpoints Amstelveen">
                                 </div>
                                 <hr>
                                 <div class="location__content">
                                     <h3 class="location__title">
-                                        <span>Padelpoints </span>Koog aan de Zaan
+                                        <span>Padelpoints</span>Amstelveen
                                     </h3>
                                     <p class="location__text">
-                                        2 indoor padelbanen met fijne horeca. Padelpoints Koog aan de Zaan is goed
-                                        bereikbaar met de auto en ligt op enkele minuten lopen van het station.
+                                        Padelpoints Amstelveen biedt de unieke beleving van spelen op drie indoor
+                                        padelbanen van topkwaliteit.
                                     </p>
                                     <div class="location__btns">
-                                        <a href="https://padelpoints.nl/padel_banen/koog-aan-de-zaan/"
-                                            class="location__details-btn btn btn--transparent">
-                                            details
-                                        </a>
-                                        <a href="https://playtomic.io/padelpoints-koog-aan-de-zaan/9b9b821d-7d64-47e3-b98d-1af4d9c2be7d"
-                                            class="location__external-btn btn" target="_blank" rel="nofollow">
-                                            reserveer
-                                        </a>
+                                        <a href="#" class="location__details-btn btn btn--transparent">details</a>
+                                        <a href="#" class="location__external-btn btn" target="_blank"
+                                            rel="nofollow">reserveer</a>
                                     </div>
                                 </div>
                             </article>
@@ -134,13 +123,49 @@
                 </div>
             </div>
         </section>
-    </main>
 
+
+        <section id="trainers-section" class="trainers-section" style="background-color: #f5f5f5; padding: 40px 0;">
+            <div class="container">
+                <h2 class="trainers-section__title">Ontmoet Onze Trainers</h2>
+                <div class="row">
+
+                    <div class="col-12 col-sm-6">
+                        <article class="trainer">
+                            <img src="https://example.com/trainer1.jpg" alt="Trainer 1" class="trainer__img">
+                            <h3 class="trainer__name">John Doe</h3>
+                            <p class="trainer__bio">
+                                John is een ervaren padeltrainer met meer dan 10 jaar ervaring en een passie voor de
+                                sport. Hij helpt spelers van elk niveau om beter te worden.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <article class="trainer">
+                            <img src="https://example.com/trainer2.jpg" alt="Trainer 2" class="trainer__img">
+                            <h3 class="trainer__name">Jane Smith</h3>
+                            <p class="trainer__bio">
+                                Jane heeft talloze toernooien gespeeld en brengt haar professionele ervaring naar
+                                Padelpoints om beginners en gevorderden te coachen.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <div class="footer_container">
             <p>&copy; 2024 Padel Points. All Rights Reserved.</p>
+            <ul class="footer_links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
