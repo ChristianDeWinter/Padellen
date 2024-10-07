@@ -126,39 +126,40 @@ include "trainer_data.php";
         </section>
 
         <section id="trainers-section" class="trainers-section" style="background-color: #f5f5f5; padding: 40px 0;">
-            <div class="container">
-                <h2 class="trainers-section__title">Ontmoet Onze Trainers</h2>
-                <div class="trainer-slider">
-                    <?php
-                    if ($result) {
-                        if ($result->num_rows > 0) {
-                            while ($row = $result->fetch_assoc()) {
-                                echo '<div class="trainer">';
-                                echo '<img class="trainer__img" src="' . htmlspecialchars($row['image_url']) . '" alt="' . htmlspecialchars($row['name']) . '">';
-                                echo '<div class="trainer__name">' . htmlspecialchars($row['name']) . '</div>';
-                                echo '<div class="trainer__bio">' . htmlspecialchars($row['bio']) . '</div>';
-                                echo '<div class="trainer__btns">';
-                                echo '<a href="#" class="trainer__btn all-trainers">All Trainers</a>';
-                                echo '<a href="#" class="trainer__btn book-training">Boek een training</a>';
-                                echo '</div>';
-                                echo '</div>';
-                            }
-                        } else {
-                            echo '<div class="trainer">Geen trainers gevonden.</div>';
-                        }
-                    } else {
-                        echo '<div class="trainer">Fout bij het ophalen van trainers: ' . htmlspecialchars($conn->error) . '</div>';
+    <div class="container">
+        <h2 class="trainers-section__title">Ontmoet Onze Trainers</h2>
+        <div class="trainer-slider">
+            <?php
+            if ($result) {
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        echo '<div class="trainer">';
+                        echo '<img class="trainer__img" src="' . htmlspecialchars($row['image_url']) . '" alt="' . htmlspecialchars($row['name']) . '">';
+                        echo '<div class="trainer__name">' . htmlspecialchars($row['name']) . '</div>';
+                        echo '<div class="trainer__bio">' . htmlspecialchars($row['bio']) . '</div>';
+                        echo '<div class="trainer__btns">';
+                        echo '<a href="#" class="trainer__btn all-trainers">All Trainers</a>';
+                        echo '<a href="#" class="trainer__btn book-training">Boek een training</a>';
+                        echo '</div>';
+                        echo '</div>';
                     }
+                } else {
+                    echo '<div class="trainer">Geen trainers gevonden.</div>';
+                }
+            } else {
+                echo '<div class="trainer">Fout bij het ophalen van trainers: ' . htmlspecialchars($conn->error) . '</div>';
+            }
 
-                    $conn->close();
-                    ?>
-                </div>
-                <div class="slider-controls">
-                    <button class="slider-button prev">❮</button>
-                    <button class="slider-button next">❯</button>
-                </div>
-            </div>
-        </section>
+            $conn->close(); 
+            ?>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-button prev">❮</button>
+            <button class="slider-button next">❯</button>
+        </div>
+    </div>
+</section>
+
     </main>
 
     <footer class="footer">
