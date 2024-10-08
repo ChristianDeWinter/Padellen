@@ -131,35 +131,42 @@ include "trainer_data.php";
                 <div class="trainer-slider">
                     <div class="slider-wrapper">
                         <?php
-                        if ($result) {
-                            if ($result->num_rows > 0) {
-                                while ($row = $result->fetch_assoc()) {
-                                    echo '<div class="trainer">';
-                                    echo '<img class="trainer__img" src="' . htmlspecialchars($row['image_url']) . '" alt="' . htmlspecialchars($row['name']) . '">';
-                                    echo '<div class="trainer__name">' . htmlspecialchars($row['name']) . '</div>';
-                                    echo '<div class="trainer__bio">' . htmlspecialchars($row['bio']) . '</div>';
-                                    echo '<div class="trainer__btns">';
-                                    echo '<a href="#" class="trainer__btn all-trainers">All Trainers</a>';
-                                    echo '<a href="#" class="trainer__btn book-training">Boek een training</a>';
-                                    echo '</div>';
-                                    echo '</div>';
-                                }
-                            } else {
-                                echo '<div class="trainer">Geen trainers gevonden.</div>';
+                        if (!empty($trainers)) {
+                            foreach ($trainers as $trainer) {
+                                echo '<div class="trainer">';
+                                echo '<img class="trainer__img" src="' . htmlspecialchars($trainer['image_url']) . '" alt="' . htmlspecialchars($trainer['name']) . '">';
+                                echo '<div class="trainer__name">' . htmlspecialchars($trainer['name']) . '</div>';
+                                echo '<div class="trainer__bio">' . htmlspecialchars($trainer['bio']) . '</div>';
+                                echo '<div class="trainer__btns">';
+                                echo '<a href="#" class="trainer__btn all-trainers">All Trainers</a>';
+                                echo '<a href="#" class="trainer__btn book-training">Boek een training</a>';
+                                echo '</div>';
+                                echo '</div>';
                             }
                         } else {
-                            echo '<div class="trainer">Fout bij het ophalen van trainers: ' . htmlspecialchars($conn->error) . '</div>';
+                            echo '<div class="trainer">Geen trainers gevonden.</div>';
                         }
-
-                        $conn->close();
                         ?>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="slider-controls">
-                        <button class="slider-button prev">❮</button>
-                        <button class="slider-button next">❯</button>
+        <section id="content-media-block_9f4989287c9f7437f5dcd5bf9b7c43bd" class="content-media">
+            <div class="content-media__wrap">
+                <div class="content-media__content-part">
+                    <h2 class="content-media__title">Spelregels</h2>
+                    <div class="content-media__content">
+                        <div class="content-media__text">
+                            <p>Padel is fun voor vier. Verrassend, spannend, snel en spectaculair. En.. iedereen kan het spelen!</p>
+                        </div>
+                        <a href="https://padelpoints.nl/spelregels/" class="content-media__btn btn btn--transparent">
+                            <span class="extra-small-hide">Bekijk alle regels</span>
+                        </a>
                     </div>
                 </div>
+
+                <div class="content-media__img-part" style="background-image: url('https://padelpoints.nl/wp-content/uploads/2021/07/2332484@2x.jpg')"></div>
             </div>
         </section>
 
