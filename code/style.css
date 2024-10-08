@@ -496,3 +496,61 @@ img {
         width: calc(100% - 20px);
     }
 }
+/* Carousel Styles */
+.trainer-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.trainer {
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #292929;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    .trainer {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .trainer {
+        flex: 0 0 100%;
+}
